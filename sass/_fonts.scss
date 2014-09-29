@@ -1,0 +1,30 @@
+$lato:'Lato', sans-serif;
+
+
+@mixin lato-light {
+
+    font-family: $lato;
+
+    font-weight: 300;
+}
+
+@mixin lato-reg {
+
+    font-family: $lato;
+
+    font-weight: 400;
+}
+
+@mixin lato-bold {
+
+    font-family: $lato;
+
+    font-weight: 700;
+}
+
+@mixin lato-black {
+
+    font-family: $lato;
+
+    font-weight: 900;
+}

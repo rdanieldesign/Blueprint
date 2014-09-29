@@ -1,0 +1,16 @@
+/* Partials */
+
+@import "normalize";
+@import "fonts";
+@import "colors";
+
+
+/* Defaults */
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
