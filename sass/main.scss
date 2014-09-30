@@ -37,7 +37,7 @@ h1 {
 }
 
 h2 {
-    color: $blue;
+    color: $dark-blue;
 }
 
 p {
@@ -69,6 +69,21 @@ span {
     overflow: visible;
 }
 
+.new {
+
+    h2 {
+        color: $blue;
+    }
+
+    article {
+        background-color: $blue;
+
+        &::before {
+            border-color: transparent $blue transparent transparent;
+        }
+    }
+}
+
 .info {
     width: 157px;
     float: left;
@@ -90,11 +105,12 @@ span {
         height: 60px;
         width: 60px;
         position: absolute;
-        background-color: HSLA(202, 59%, 50%, 1);
+        background-color: $dark-blue;
         border-radius: 50%;
-        border: HSLA(202, 79%, 68%, 1) 9px solid;
+        border: $light-blue 9px solid;
         top: -9px;
         right: -35px;
+        z-index: 99;
 
         img {
             display: block;
@@ -114,19 +130,19 @@ span {
 }
 
 article {
-    background-color: $blue;
+    background-color: $dark-blue;
     padding: 40px;
     border-radius: 4px;
 
-    &::after {
+    &::before {
         content: "";
         width: 0;
         height: 0;
         border-style: solid;
-        border-width: 12.5px 20px 12.5px 0;
-        border-color: transparent HSLA(202, 59%, 50%, 1) transparent transparent;
-        position:absolute;
-        top: 0;
-        left: 32px;
+        border-width: 10px 13px 10px 0;
+        border-color: transparent $dark-blue transparent transparent;
+        position: absolute;
+        top: 13px;
+        left: 39px;
     }
 }

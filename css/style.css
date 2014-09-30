@@ -422,6 +422,13 @@ span {
   margin: 0 auto;
   overflow: visible; }
 
+.new h2 {
+  color: HSLA(202, 79%, 68%, 1); }
+.new article {
+  background-color: HSLA(202, 79%, 68%, 1); }
+  .new article::before {
+    border-color: transparent HSLA(202, 79%, 68%, 1) transparent transparent; }
+
 .info {
   width: 157px;
   float: left;
@@ -440,9 +447,10 @@ span {
     position: absolute;
     background-color: HSLA(202, 59%, 50%, 1);
     border-radius: 50%;
-    border: HSLA(202, 79%, 68%, 1) 9px solid;
+    border: HSLA(204, 84%, 83%, 1) 9px solid;
     top: -9px;
-    right: -35px; }
+    right: -35px;
+    z-index: 99; }
     .info .icon img {
       display: block;
       height: 24px;
@@ -451,7 +459,7 @@ span {
 .border {
   width: 74%;
   float: left;
-  border-left: HSLA(202, 79%, 68%, 1) 10px solid;
+  border-left: HSLA(204, 84%, 83%, 1) 10px solid;
   padding-left: 52px;
   padding-bottom: 15px;
   position: relative; }
@@ -460,15 +468,15 @@ article {
   background-color: HSLA(202, 59%, 50%, 1);
   padding: 40px;
   border-radius: 4px; }
-  article::after {
+  article::before {
     content: "";
     width: 0;
     height: 0;
     border-style: solid;
-    border-width: 12.5px 20px 12.5px 0;
+    border-width: 10px 13px 10px 0;
     border-color: transparent HSLA(202, 59%, 50%, 1) transparent transparent;
     position: absolute;
-    top: 0;
-    left: 32px; }
+    top: 13px;
+    left: 39px; }
 
 /*# sourceMappingURL=style.css.map */
