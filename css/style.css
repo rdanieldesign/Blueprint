@@ -391,8 +391,23 @@ h1,
 p {
   color: white; }
 
+h1 {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: 1.8em;
+  margin-bottom: 14px; }
+
 h2 {
   color: HSLA(202, 59%, 50%, 1); }
+
+p {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  border-top: white 1px solid;
+  padding-top: 26px;
+  padding-bottom: 17px;
+  font-size: 1.2em;
+  line-height: 1.4em; }
 
 span {
   color: HSLA(206, 23%, 76%, 1); }
@@ -408,11 +423,9 @@ span {
   overflow: visible; }
 
 .info {
-  width: 167px;
+  width: 157px;
   float: left;
-  border-right: HSLA(202, 79%, 68%, 1) 10px solid;
-  margin-right: 52px;
-  padding-right: 40px;
+  padding-right: 39px;
   text-align: right;
   position: relative;
   overflow: visible; }
@@ -422,26 +435,40 @@ span {
     font-size: 3em; }
   .info .icon {
     display: block;
-    position: absolute;
-    width: 60px;
     height: 60px;
+    width: 60px;
+    position: absolute;
     background-color: HSLA(202, 59%, 50%, 1);
     border-radius: 50%;
-    border: HSLA(202, 79%, 68%, 1) 10px solid;
-    top: -10px;
-    right: -10px;
-    text-align: center;
-    vertical-align: middle; }
+    border: HSLA(202, 79%, 68%, 1) 9px solid;
+    top: -9px;
+    right: -35px; }
     .info .icon img {
+      display: block;
       height: 24px;
-      margin: 0 auto;
-      vertical-align: middle; }
+      margin: 8px auto; }
+
+.border {
+  width: 74%;
+  float: left;
+  border-left: HSLA(202, 79%, 68%, 1) 10px solid;
+  padding-left: 52px;
+  padding-bottom: 15px;
+  position: relative; }
 
 article {
-  width: 74%;
   background-color: HSLA(202, 59%, 50%, 1);
-  float: left;
-  padding: 20px;
+  padding: 40px;
   border-radius: 4px; }
+  article::after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 12.5px 20px 12.5px 0;
+    border-color: transparent HSLA(202, 59%, 50%, 1) transparent transparent;
+    position: absolute;
+    top: 0;
+    left: 32px; }
 
 /*# sourceMappingURL=style.css.map */
