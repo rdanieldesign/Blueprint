@@ -12,5 +12,91 @@ html {
 }
 
 *, *:before, *:after {
-  box-sizing: inherit;
+    @include lato-reg;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+p,
+span,
+img {
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+p {
+    color: white;
+}
+
+h2 {
+    color: $blue;
+}
+
+span {
+    color: $grey;
+}
+
+
+
+
+/* Styles */
+
+.wrapper {
+    width: 100%;
+    padding: 25px 20px;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    overflow: visible;
+}
+
+.info {
+    width: 167px;
+    float: left;
+    border-right: $light-blue 10px solid;
+    margin-right: 52px;
+    padding-right: 40px;
+    text-align: right;
+    position: relative;
+    overflow: visible;
+
+    span {
+        font-size: .9em;
+    }
+
+    h2 {
+        font-size: 3em;
+    }
+
+    .icon {
+        display: block;
+        position:absolute;
+        width: 60px;
+        height: 60px;
+        background-color: $blue;
+        border-radius: 50%;
+        border: $light-blue 10px solid;
+        top: -10px;
+        right: -10px;
+        text-align: center;
+        vertical-align: middle;
+
+        img {
+            height: 24px;
+            margin: 0 auto;
+            vertical-align: middle;
+        }
+    }
+}
+
+article {
+    width: 74%;
+    background-color: $blue;
+    float: left;
+    padding: 20px;
+    border-radius: 4px;
 }
